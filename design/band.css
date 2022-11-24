@@ -508,7 +508,13 @@ main{
 .div-web-story{
     display: flex;
     justify-content: center;
-    gap: 45px;
+    gap: 28px;
+    background-color: white;
+    padding: 62px 0px;
+}
+.web-story{
+    width: 190px;
+    height: 230px;
 }
 .podcast>p{
     color: #AE012B;
@@ -623,7 +629,6 @@ main{
     font-weight: bolder;
     cursor: pointer;
 }
-
 footer{
     background-color: #647083;
     display: flex;
@@ -774,12 +779,9 @@ footer{
         font-size: 16px;
     }
     .div-web-story{
-        gap: 5px;
-        padding: 5px 10px;
-    }
-    .web-story{
-        width: 20%;
-        height: 90%;
+        flex-wrap: wrap;
+        gap: 28px;
+        padding: 32px 0px;
     }
     .web-story>img{
         width: 100%;
@@ -857,22 +859,27 @@ footer{
         height: 125px;
     }
     .div-podcast{
-        gap: 10px;
-        padding: 22px 10px;
-        flex-direction: row;
+        gap: 15.5px;
+        padding: 0px;
+        overflow-y: auto;
+        flex-direction: column;
+        height: 330px;
+        padding: 15px;
     }
     .podcast{
-        width: 90%;
+        width: 48%;
     }
     .div-web-story{
+        gap: 15.5px;
+        padding: 0px;
+        overflow-y: auto;
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        height: 300px;
+        padding: 15px;
     }
     .web-story{
-        width: 80%;
-        height: 320px;
-        width: 70%;
+        width: 48%;
+        height: 270px;
     }
     .assuntos-em-alta{
         gap: 0px;
@@ -896,9 +903,6 @@ footer{
     }
 }
 @media (max-width: 375px){
-    .podcast{
-        width: 100%;
-    }
     .div-programacao-politica-de-provacidade{
         flex-direction: column;
     }
